@@ -1,0 +1,11 @@
+.displayedNumber {
+  text-align: center;
+  padding-top: 375px;
+}
+
+button{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 15px;
+}

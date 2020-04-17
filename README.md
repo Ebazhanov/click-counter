@@ -1,1 +1,3 @@
-# click-counter
+# an example of click counter
+
+
