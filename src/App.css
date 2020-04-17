@@ -1,6 +1,6 @@
 .displayedNumber {
   text-align: center;
-  padding-top: 375px;
+  padding-top: 245px;
   font-size: 5cm;
 }
 
@@ -11,5 +11,4 @@ button{
   padding: 15px 32px;
   width: 150px;
   height: 70px;
-  font-size:40cm
 }
