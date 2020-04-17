@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {Button} from 'react-bootstrap';
 import './App.css'
 
 class App extends React.Component {
@@ -18,8 +16,8 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <div className="displayedNumber">{this.state.value}</div>
-                <Button onClick={this.buttonClicked}>Count me!</Button>
+                <h6 className="displayedNumber">{this.state.value}</h6>
+                <button type="button" class="btn btn-primary btn-lg" onClick={this.buttonClicked}>Count me!</button>
             </div>
         );
     }
