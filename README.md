@@ -31,4 +31,6 @@ ReactDOM.render(
 export default App;
 ```
 
+To run on `http://localhost:3000`:
+- `$ yarn start`
 
