@@ -1,5 +1,9 @@
 # Simple example of `click counter`
-[https://click-to-count.netlify.app/](https://click-to-count.netlify.app/)
+
+#### you can check it out here 
+- [https://click-to-count.netlify.app](https://click-to-count.netlify.app)
+
+--------
 
 ```js
 class App extends React.Component {
