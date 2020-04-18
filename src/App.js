@@ -17,7 +17,7 @@ class App extends React.Component {
         return (
             <div>
                 <h6 className="displayedNumber">{this.state.value}</h6>
-                <button type="button" class="btn btn-primary btn-lg" onClick={this.buttonClicked}>Count me!</button>
+                <button type="button" class="btn btn-primary" onClick={this.buttonClicked}>Count me!</button>
             </div>
         );
     }
