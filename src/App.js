@@ -17,7 +17,7 @@ class App extends Component {
         return (
             <div>
                 <div className="displayedNumber">{this.state.value}</div>
-                <button type="button" class="btn btn-primary" onClick={this.buttonClicked}>Count!</button>
+                <button type="button" class="btn btn-primary" onClick={this.buttonClicked}>Count me!</button>
             </div>
         );
     }
