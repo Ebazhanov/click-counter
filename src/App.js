@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './App.css'
 
-class App extends React.Component {
+class App extends Component {
     constructor(props) {
         super(props);
         this.state = {value: 0};
@@ -17,7 +17,7 @@ class App extends React.Component {
         return (
             <div>
                 <div className="displayedNumber">{this.state.value}</div>
-                <button type="button" class="btn btn-primary" onClick={this.buttonClicked}>Count me!</button>
+                <button type="button" class="btn btn-primary" onClick={this.buttonClicked}>Count!</button>
             </div>
         );
     }
