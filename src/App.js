@@ -1,26 +1,16 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import './App.css'
 
-class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {value: 0};
-        this.buttonClicked = this.buttonClicked.bind(this);
-    }
+function App() {
+    const [count, setCount] = useState(0);
+    return (
+        <div>
+            <div className="displayedNumber">{count}</div>
+            <button type="button" class="btn btn-primary" onClick={() => setCount(count + 1)}>Count me!</button>
+        </div>
+    );
 
-    buttonClicked() {
-        this.setState({value: this.state.value + 1});
-    }
-
-    render() {
-        return (
-            <div>
-                <div className="displayedNumber">{this.state.value}</div>
-                <button type="button" class="btn btn-primary" onClick={this.buttonClicked}>Count me!</button>
-            </div>
-        );
-    }
 }
 
 ReactDOM.render(
