@@ -1,9 +1,10 @@
-# Simple example of `click counter`
-
-#### with using the State Hook
-- [https://click-to-count.netlify.app](https://click-to-count.netlify.app)
+## My example of `click counter` with using the State Hook
+> [https://click-to-count.netlify.app](https://click-to-count.netlify.app)
+> I styled my version with material-ui, you can try to reach 2 clicks to see the bonus ))  
 
 --------
+
+You might want to see from where it was all started, what is the simple implementation
 
 ```js
 function App() {
@@ -28,8 +29,8 @@ ReactDOM.render(
 export default App;
 ```
 
-How to run on `http://localhost:3000`:
-- `$ yarn start`
+You can run on `http://localhost:3000`:
+-  `$ yarn start`, make sure you installed `node_modules`
 
 > We now have a counter that increases every time there’s a click on a Button.
 This is a simple example to illustrate state. I don’t recommend you use it as a counter in a real application. Instead, you’d probably want to create this.state.history variable that stores exactly which button was clicked at which point as an array of the current state at different points in time.
