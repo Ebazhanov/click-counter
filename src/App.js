@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import { Box, Button, FormGroup, FormLabel } from "@mui/material";
+import ReactConfetti from "react-confetti";
+import useWindowSize from "react-use/lib/useWindowSize";
 
 function App() {
   const [count, setCount] = useState(0);
+  const { width, height } = useWindowSize();
+
+  if (count > 2) {
+    return <ReactConfetti width={width} height={height} />;
+  }
 
   return (
     <>

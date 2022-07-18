@@ -9,13 +9,15 @@
 function App() {
     const [count, setCount] = useState(0);
     return (
-        <div>
-            <div className="displayedNumber">{count}</div>
-            <button type="button" class="btn btn-primary" 
-            onClick={() => setCount(count + 1)}>Count me!</button>
-        </div>
+        <>
+            <div>{count}</div>
+            <button 
+                type="button"
+                onClick={() => setCount(count + 1)}
+            >
+                Count me!</button>
+        </>
     );
-
 }
 
 ReactDOM.render(
@@ -26,7 +28,7 @@ ReactDOM.render(
 export default App;
 ```
 
-To run on `http://localhost:3000`:
+How to run on `http://localhost:3000`:
 - `$ yarn start`
 
 > We now have a counter that increases every time there’s a click on a Button.
