@@ -1,21 +1,26 @@
-import React, {useState} from 'react';
-import ReactDOM from 'react-dom';
-import './App.css'
+import React, { useState } from "react";
+import "./App.css";
+import { Box, Button, FormGroup, FormLabel } from "@mui/material";
 
 function App() {
-    const [count, setCount] = useState(0);
-    return (
-        <div>
-            <div className="displayedNumber">{count}</div>
-            <button type="button" class="btn btn-primary" onClick={() => setCount(count + 1)}>Count me!</button>
-        </div>
-    );
-
+  const [count, setCount] = useState(0);
+  return (
+    <>
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        minHeight="100vh"
+      >
+        <FormGroup>
+          <FormLabel>{count}</FormLabel>
+          <Button type="button" onClick={() => setCount(count + 1)}>
+            Count me!
+          </Button>
+        </FormGroup>
+      </Box>
+    </>
+  );
 }
-
-ReactDOM.render(
-    <App/>,
-    document.getElementById('root')
-);
 
 export default App;

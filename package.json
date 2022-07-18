@@ -1,11 +1,18 @@
 {
-  "name": "test",
+  "name": "click-counter-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/material": "^5.9.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "prettier": "^2.7.1"
   },
   "scripts": {
     "start": "react-scripts start",
